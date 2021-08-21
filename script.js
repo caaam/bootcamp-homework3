@@ -40,7 +40,7 @@ function generatePassword() {
 
   let usableCharacters = availableCharset.split("");
 
-  for (let i = 0; i <= numericPasswordLength; i++) {
+  for (let i = 0; i < numericPasswordLength; i++) {
     password += usableCharacters[getRandomInt(availableCharset.length)];
   }
 
